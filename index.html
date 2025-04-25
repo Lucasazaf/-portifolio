@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Lucas Eliazafe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #0f2027;
+      overflow-x: hidden;
+      color: #fff;
+    }
+    .background {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: rise 20s infinite ease-in;
+    }
+    @keyframes rise {
+      0% { transform: translateY(0) scale(1); opacity: 0.2; }
+      50% { opacity: 0.4; }
+      100% { transform: translateY(-1200px) scale(1.2); opacity: 0; }
+    }
+    header {
+      background-color: rgba(79, 70, 229, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    h2 {
+      color: #90cdf4;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    a {
+      color: #63b3ed;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="bubble" style="left: 10%; animation-duration: 12s; width: 20px; height: 20px;"></div>
+    <div class="bubble" style="left: 20%; animation-duration: 15s; width: 25px; height: 25px;"></div>
+    <div class="bubble" style="left: 30%; animation-duration: 18s; width: 30px; height: 30px;"></div>
+    <div class="bubble" style="left: 50%; animation-duration: 10s; width: 35px; height: 35px;"></div>
+    <div class="bubble" style="left: 70%; animation-duration: 14s; width: 22px; height: 22px;"></div>
+    <div class="bubble" style="left: 80%; animation-duration: 20s; width: 28px; height: 28px;"></div>
+  </div>
+
+  <header>
+    <h1>Lucas Eliazafe</h1>
+    <p>Estudante de Tecnologia | Futuro Desenvolvedor</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Sobre Mim</h2>
+      <p>Sou estudante de Análise e Desenvolvimento de Sistemas na Faculdade Estacio. Estou começando na área de desenvolvimento e tenho grande interesse em aprender e contribuir com projetos reais.</p>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python (básico)</li>
+        <li>Git e GitHub</li>
+        <li>VS Code, lógica de programação</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projetos</h2>
+      <ul>
+        <li><strong>Portfólio Pessoal:</strong> <a href="#">Ver Projeto</a> | <a href="#">Ver Código</a></li>
+        <li><strong>To-do List:</strong> <a href="#">Ver Projeto</a> | <a href="#">Ver Código</a></li>
+        <li><strong>App de Clima:</strong> <a href="#">Ver Projeto</a> | <a href="#">Ver Código</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <p>Curso: Análise e Desenvolvimento de Sistemas<br>
+      Instituição: Faculdade Estacio<br>
+      Período: 3º semestre – 2023 até 2026</p>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+        <p>Email: lucaseliazafe@gmail.com<br>
+      LinkedIn: <a href="#">linkedin.com/in/azaf</a><br>
+      GitHub: <a href="#">github.com/Azaf</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lucas Eliazafe. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
